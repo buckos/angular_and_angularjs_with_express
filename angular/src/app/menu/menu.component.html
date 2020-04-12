@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">
+    <button #r="matMenuTrigger" mat-icon-button [matMenuTriggerFor]="menu" >
+      <mat-icon (mouseover)="open(r)"  >menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+        <button routerLink="angular" mat-menu-item>
+          <span>Angular 9</span>
+        </button>
+        <button routerLink="angularjs" mat-menu-item>
+          <span>AngularJS</span>
+        </button>
+    </mat-menu>
+  </span>
+  <span class="fill-remaining-space">Angular Hybrid App</span>
+</mat-toolbar>
+
